@@ -13,6 +13,7 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-transparent-black: #00000067;
 
   /* Font size */
   --font-large: 48px;
@@ -49,6 +50,13 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -105,4 +113,39 @@ h3 {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  background: url(imgs/background.jpg) center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avartar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 1px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+  background: var(--color-transparent-black);
+  border-radius: 10px;
+}
+
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  background: var(--color-transparent-black);
+}
+
+.home__contact:hover {
+  border-color: var(--color-transparent-black);
 }
