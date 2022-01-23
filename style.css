@@ -7,9 +7,9 @@
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-black: #000000;
-  --color-dark-gray: #4d4d4d;
+  --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
-  --color-light-gray: #7c7979;
+  --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
@@ -85,7 +85,7 @@ h3 {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink);
+  background-color: var(--color-light-grey);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -112,7 +112,7 @@ h3 {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-grey);
 }
 
 /* Home */
