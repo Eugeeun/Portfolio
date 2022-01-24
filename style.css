@@ -118,6 +118,15 @@ h3 {
   background-color: var(--color-dark-grey);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 #home {
   background: url(imgs/background.jpg) center/cover no-repeat;
@@ -446,4 +455,40 @@ h3 {
 .contact__links i:hover {
   transform: scale(1.08);
   color: var(--color-transparent-black);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
