@@ -96,6 +96,7 @@ h3 {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animaiton-duration) ease;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -124,7 +125,7 @@ h3 {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-transparent-black);
 }
 
 .navbar__toggle-btn {
