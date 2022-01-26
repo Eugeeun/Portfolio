@@ -13,7 +13,8 @@
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
-  --color-transparent-black: #00000067;
+  --color-transparent-black: #00000085;
+  --color-transparent-grey: #00000048;
 
   /* Font size */
   --font-large: 48px;
@@ -86,12 +87,20 @@ h3 {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-light-grey);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animaiton-duration) ease;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-transparent-black);
+  padding: 0 8px;
 }
 
 .navbar__logo {
@@ -131,6 +140,7 @@ h3 {
 #home {
   background: url(imgs/background.jpg) center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 .home__avartar {
@@ -143,7 +153,7 @@ h3 {
 .home__title,
 .home__description {
   color: var(--color-white);
-  background: var(--color-transparent-black);
+  background: var(--color-transparent-grey);
   border-radius: 10px;
 }
 
@@ -155,11 +165,11 @@ h3 {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: 4px;
-  background: var(--color-transparent-black);
+  background: var(--color-transparent-grey);
 }
 
 .home__contact:hover {
-  border-color: var(--color-transparent-black);
+  border-color: var(--color-transparent-grey);
 }
 
 /* Section common */
