@@ -20,8 +20,18 @@ navbarMenu.addEventListener('click', event => {
   const link = target.dataset.link;
   if (!link) return;
   // 링크가 없다면 early return
-  else console.log(event.target.dataset.link);
+  else console.log(event.target.dataset.link); // 그냥 찍어보는 거임
 
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: 'smooth' });
+  scrollIntoView(link);
 });
+
+// Scrolling to contact when click 'contact me'
+const contact = document.querySelector('.home__contact');
+contact.addEventListener('click', () => {
+  scrollIntoView('#contact');
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
