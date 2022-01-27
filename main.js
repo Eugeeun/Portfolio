@@ -39,6 +39,18 @@ document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+// Show "arrow up" button when scrolling down
+const toTopBtn = document.querySelector('.toTopBtn');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight / 2) toTopBtn.classList.add('visible');
+  else toTopBtn.classList.remove('visible');
+});
+
+// when button's clicked locate to top
+toTopBtn.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });

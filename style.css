@@ -468,6 +468,27 @@ h3 {
   color: var(--color-transparent-black);
 }
 
+/* toTopBtn */
+.toTopBtn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: var(--font-medium);
+  background-color: var(--color-transparent-black);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  color: var(--color-light-white);
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animaiton-duration) ease;
+}
+
+.toTopBtn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
