@@ -22,7 +22,15 @@ navbarMenu.addEventListener('click', event => {
   // 링크가 없다면 early return
   else console.log(event.target.dataset.link); // 그냥 찍어보는 거임
 
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+  console.log(navbarMenu.classList);
 });
 
 // Scrolling to contact when click 'contact me'
