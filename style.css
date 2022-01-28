@@ -499,6 +499,14 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -523,15 +531,30 @@ h3 {
     display: block;
   }
 
+  .home__avartar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 28px;
   }
 
   .skillset {
     flex-direction: column;
+  }
+
+  .category__btn {
+    padding: 8px;
   }
 
   .project {
