@@ -302,7 +302,8 @@ h3 {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
-  padding: 8px 32px;
+  padding: 8px 40px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -315,7 +316,7 @@ h3 {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 6px;
 }
 
 .category__count {
@@ -328,10 +329,9 @@ h3 {
   display: inline-block;
   /* span태그는 인라인 요소이기 때문에 정원이 안됨 -> inline-block으로 바꾸어줌 */
   margin-left: 10px;
-  position: relative;
-  /* 부모요소에 상대적으로 위치를 지정해줌 */
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 8px;
   opacity: 0;
   /* 0이면 안보이고 1이면 보임 */
   transition: all var(--animaiton-duration);
@@ -509,6 +509,9 @@ h3 {
   }
   .navbar__toggle-btn {
     display: block;
+    top: 20px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
   #navbar {
     flex-direction: column;
@@ -538,6 +541,7 @@ h3 {
 
   .section {
     padding: 16px;
+    padding: 45px;
   }
 
   .about__majors {
@@ -554,15 +558,43 @@ h3 {
   }
 
   .category__btn {
-    padding: 8px;
+    margin: 4px 0;
+    width: 100%;
+  }
+
+  .category__count {
+    right: 20px;
   }
 
   .project {
     flex-grow: 1;
   }
 
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 8px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
+  .toTopBtn {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: var(--font-regular);
+    right: 16px;
+    bottom: 16px;
   }
 }
