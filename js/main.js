@@ -115,14 +115,7 @@ workBtnContainer.addEventListener('click', (event) => {
 // 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다.
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
 // 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
-const sectionIds = [
-  '#home',
-  '#about',
-  '#skills',
-  '#work',
-  '#testimonials',
-  '#contact',
-]; // 일단 문자열로 모두 저장
+const sectionIds = ['#home', '#about', '#skills', '#work', '#contact']; // 일단 문자열로 모두 저장
 const sections = sectionIds.map((id) => document.querySelector(id));
 // 모든 요소들을 sections 라는 배열에 할당
 
