@@ -15,6 +15,9 @@
   --color-orange: #feb546;
   --color-transparent-black: #00000085;
   --color-transparent-grey: #00000048;
+  --color-HTML: #f95700;
+  --color-CSS: #00539c;
+  --color-JavaScript: #f5d042;
 
   /* Font size */
   --font-large: 48px;
@@ -33,6 +36,15 @@
 
   /* Animation */
   --animaiton-duration: 300ms;
+}
+
+/* clock-digital-font */
+@font-face {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Universal tags */
@@ -94,7 +106,7 @@ h3 {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 10px;
   transition: all var(--animaiton-duration) ease;
   z-index: 1;
 }
@@ -107,6 +119,14 @@ h3 {
 .navbar__logo {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+}
+
+.navbar__logo .clock {
+  font-family: 'LAB디지털';
+  padding: 10px;
+  background-color: var(--color-transparent-black);
+  border-radius: 10px;
+  margin-right: 5px;
 }
 
 .navbar__menu {
@@ -141,7 +161,7 @@ h3 {
 
 /* Home */
 #home {
-  background: url(imgs/background.jpg) center/cover no-repeat;
+  background: url(../imgs/background.jpg) center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -158,6 +178,7 @@ h3 {
   color: var(--color-white);
   background: var(--color-transparent-grey);
   border-radius: 10px;
+  padding: 10px 0;
 }
 
 .home__contact {
@@ -206,8 +227,20 @@ h3 {
   margin-bottom: 16px;
 }
 
+.major__icon .fa-html5 {
+  color: var(--color-HTML);
+}
+
+.major__icon .fa-css3-alt {
+  color: var(--color-CSS);
+}
+
+.major__icon .fa-js-square {
+  color: var(--color-JavaScript);
+}
+
 .major__icon:hover i {
-  color: var(--color-pink);
+  color: var(--color-blue);
   transform: scale(1.1);
   transition: all var(--animaiton-duration) ease;
 }

@@ -18,7 +18,7 @@ document.addEventListener('scroll', () => {
 
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu'); // .navbar__menu를 선택
-navbarMenu.addEventListener('click', event => {
+navbarMenu.addEventListener('click', (event) => {
   // .nvabar__menu가 클릭이 될 때 이 함수를 실행해줘
   const target = event.target; // 클릭되고 있는 타깃
   const link = target.dataset.link; // 타깃의 data-link
@@ -75,7 +75,7 @@ toTopBtn.addEventListener('click', () => {
 const workBtnContainer = document.querySelector('.work__categories'); // .work__categories선택
 const projectContainer = document.querySelector('.work__projects'); // .work__projects선택
 const projects = document.querySelectorAll('.project'); // .project를 가진 요소 모두 선택
-workBtnContainer.addEventListener('click', event => {
+workBtnContainer.addEventListener('click', (event) => {
   // .work__categories가 클릭이 되면
   const filter =
     event.target.dataset.filter || event.target.parentNode.dataset.filter;
@@ -93,7 +93,7 @@ workBtnContainer.addEventListener('click', event => {
   projectContainer.classList.add('ani-out'); // .work__projects에 ani-out 클래스 추가
   setTimeout(() => {
     // 시간지연
-    projects.forEach(project => {
+    projects.forEach((project) => {
       // projects를 빙글빙글 돌면서
       // console.log(project.dataset.type);
       if (filter === 'all' || filter === project.dataset.type) {
@@ -123,10 +123,10 @@ const sectionIds = [
   '#testimonials',
   '#contact',
 ]; // 일단 문자열로 모두 저장
-const sections = sectionIds.map(id => document.querySelector(id));
+const sections = sectionIds.map((id) => document.querySelector(id));
 // 모든 요소들을 sections 라는 배열에 할당
 
-const navItems = sectionIds.map(id =>
+const navItems = sectionIds.map((id) =>
   document.querySelector(`[data-link="${id}"]`)
 );
 // 동일한 내비게이션 메뉴아이템 요소들을 배열로 할당
@@ -156,7 +156,7 @@ const observerOptions = {
 };
 
 const observerCallback = (entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     // 여기서 navbar__menu를 활성화 시켜주면 됨
     // console.log(entry.target);
     if (!entry.isIntersecting && entry.intersectionRatio > 0) {
@@ -175,7 +175,7 @@ const observerCallback = (entries, observer) => {
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 // 이제부터 관찰할거야
 
-sections.forEach(section => observer.observe(section));
+sections.forEach((section) => observer.observe(section));
 
 window.addEventListener('wheel', () => {
   if (window.scrollY === 0) {

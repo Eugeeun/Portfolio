@@ -19,15 +19,16 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+    <script src="./js/clock.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">JongWon</a>
+        <span class="clock">00:00:00</span>
+        <a href="#">JongWon's Portfolio</a>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
@@ -47,11 +48,11 @@
       <div class="home__container">
         <img src="imgs/img9.jpg" alt="profile img" class="home__avartar" />
       <h1 class="home__title">
-        Hello <br />
-        I'm JongWon
+        Welcome! <br />
+        It's JongWon's Portfolio!
       </h1>
       <h2 class="home__description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing.
+        I wanna be one of a GREATEST Full-Stack Developer in the world!
       </h2>
       <button class="home__contact" data-link="#contact">Contact Me</button>
       </div>
@@ -70,21 +71,21 @@
           <div class="major__icon">
             <i class="fab fa-html5"></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
+          <h2 class="major__title">HTML</h2>
           <h3 class="major__description">HTML, CSS, JavaScript</h3>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
+          <h2 class="major__title">CSS</h2>
           <h3 class="major__description">HTML, CSS, JavaScript</h3>
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
+            <i class="fa-brands fa-js-square"></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
+          <h2 class="major__title">JavaScript</h2>
           <h3 class="major__description">HTML, CSS, JavaScript</h3>
         </div>
       </div>
@@ -153,16 +154,12 @@
               <h3 class="skillset__title">Tools</h3>
               <ul class="tool__list">
                 <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Visual Studio Code</span></li>
               </ul>
             </div>
             <div class="etc">
               <h3 class="skillset__title">Etc</h3>
               <ul class="etc">
-                <li><span>Git</span></li>
-                <li><span>Git</span></li>
-                <li><span>Git</span></li>
+                <li><span>Github</span></li>
               </ul>
             </div>
           </div>
@@ -247,14 +244,14 @@
     </section>
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">myemail@.com</h2>
+      <h1 class="contact__title">Contact me!</h1>
+      <h2 class="contact__email">jack603@naver.com</h2>
       <div class="contact__links">
         <a href="https://github.com/Eugeeun" target="blank">
           <i class="fab fa-github-square"></i>
         </a>
       </div>
-      <p class="contact__rights">2022 Clone Coding JongWon - All rights reserved</p>
+      <p class="contact__rights">2022 Coding JongWon - All rights reserved</p>
     </section>
 
     <!-- Arrow up -->
