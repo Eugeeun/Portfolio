@@ -11,7 +11,9 @@
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
-  --color-yellow: #fff7d1;
+  --color-yellow: #f0edcc;
+  --color-dark-green: #02343f;
+  --color-transparent-dark-green: #02343f80;
   --color-orange: #feb546;
   --color-transparent-black: #00000085;
   --color-transparent-grey: #00000048;
@@ -129,8 +131,14 @@ h3 {
   margin-right: 5px;
 }
 
+.navbar__logo a {
+  text-shadow: 4px 0 var(--color-black);
+}
+
 .navbar__menu {
   display: flex;
+  background-color: var(--color-transparent-black);
+  border-radius: 10px;
 }
 
 .navbar__menu__item {
@@ -161,16 +169,40 @@ h3 {
 
 /* Home */
 #home {
-  background: url(../imgs/background.jpg) center/cover no-repeat;
+  background: url() center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
 }
+
+#home .home__container .profileAndGreeting {
+  display: flex;
+  width: 100%;
+}
+
+#home .home__container .profileAndGreeting .imgAndBtn {
+  position: relative;
+}
+#home .home__container .profileAndGreeting .imgAndBtn .home__contact {
+  position: absolute;
+  top: 160px;
+  left: 35px;
+}
+
 .home__avartar {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   border: 1px solid var(--color-light-white);
+  margin-right: 30px;
+}
+
+.home__title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 100px;
+  text-shadow: 4px 0 var(--color-black);
 }
 
 .home__title,
@@ -229,20 +261,22 @@ h3 {
 
 .major__icon .fa-html5 {
   color: var(--color-HTML);
+  transition: all var(--animaiton-duration) ease;
 }
 
 .major__icon .fa-css3-alt {
   color: var(--color-CSS);
+  transition: all var(--animaiton-duration) ease;
 }
 
 .major__icon .fa-js-square {
   color: var(--color-JavaScript);
+  transition: all var(--animaiton-duration) ease;
 }
 
 .major__icon:hover i {
   color: var(--color-blue);
-  transform: scale(1.1);
-  transition: all var(--animaiton-duration) ease;
+  transform: scale(1.1) rotate(5deg);
 }
 
 .major__title,
@@ -250,27 +284,41 @@ h3 {
   color: var(--color-dark-grey);
 }
 
-.job {
+.about__next {
+  text-align: left;
+}
+
+.about__next span:first-child {
+  display: block;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.upnext {
   display: flex;
   align-items: center;
 }
 
-.job__description {
+.upnext i {
+  font-size: var(--font-medium);
+}
+
+.upnext__description {
   margin: 0 16px;
   text-align: left;
 }
 
-.job__name,
-.job__period {
+.upnext__name,
+.upnext__category {
   color: var(--color-light-grey);
   margin: 3px 0;
 }
 
-.job__name {
+.upnext__name {
   font-size: var(--font-small);
 }
 
-.job__period {
+.upnext__category {
   font-size: var(--font-micro);
 }
 
@@ -279,15 +327,21 @@ h3 {
   background-color: var(--color-yellow);
 }
 
+#skills .section__container h1,
+#skills .section__container h2 {
+  color: var(--color-dark-green);
+}
+
 .skillset {
   display: flex;
-  background-color: var(--color-light-grey);
-  color: var(--color-light-white);
+  background-color: var(--color-transparent-dark-green);
+  color: var(--color-yellow);
   margin: 20px 0;
+  border-radius: 10px;
 }
 
 .skillset__title {
-  color: var(--color-white);
+  color: var(--color-yellow);
 }
 
 .skill {
@@ -296,8 +350,10 @@ h3 {
 
 .skillset__left {
   flex-basis: 60%;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-dark-green);
   padding: 20px 40px;
+  border-radius: 10px;
+  border: 2px solid var(--color-light-white);
 }
 
 .skill__description {
@@ -307,27 +363,30 @@ h3 {
 
 .skill__bar {
   width: 100%;
-  height: 3px;
+  height: 11px;
   background-color: var(--color-transparent-black);
+  border-radius: 10px;
 }
 
 .skill__value {
-  width: 70%;
-  height: 3px;
-  background-color: var(--color-orange);
+  height: 10px;
+  background-color: var(--color-yellow);
+  border-radius: 10px;
 }
 
 .skillset__right {
   flex-basis: 40%;
+  border-radius: 10px;
 }
 
 .tools {
-  background-color: var(--color-grey);
+  background-color: var(--color-transparent-dark-green);
 }
 
 .tools,
 .etc {
   padding: 20px;
+  border-radius: 10px;
 }
 
 /* Work */
