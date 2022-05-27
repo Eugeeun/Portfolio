@@ -410,12 +410,18 @@ h3 {
   font-size: var(--font-regular);
   padding: 8px 40px;
   position: relative;
+  transition: all var(--animaiton-duration);
 }
 
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-transparent-black);
+  background-color: var(--color-dark-green);
   color: var(--color-white);
+}
+
+.category__btn.selected,
+.category__btn:hover {
+  color: var(--color-dark-green);
 }
 
 /* 액티브가 되거나 마우스가 올라가면 */
@@ -426,18 +432,17 @@ h3 {
 }
 
 .category__count {
-  background-color: var(--color-orange);
+  background-color: var(--color-yellow);
+  font-size: calc(var(--font-medium) * 0.8);
   border-radius: 50%;
-  color: var(--color-white);
+  color: var(--color-dark-green);
   width: 24px;
   height: 24px;
   line-height: 24px;
   display: inline-block;
   /* span태그는 인라인 요소이기 때문에 정원이 안됨 -> inline-block으로 바꾸어줌 */
-  margin-left: 10px;
   position: absolute;
-  top: -20px;
-  right: 8px;
+  right: 41.8%;
   opacity: 0;
   /* 0이면 안보이고 1이면 보임 */
   transition: all var(--animaiton-duration);
