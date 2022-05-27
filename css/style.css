@@ -175,6 +175,10 @@ h3 {
   text-align: center;
 }
 
+#home .home__container {
+  margin: 5% 0px 8%;
+}
+
 #home .home__container .profileAndGreeting {
   display: flex;
   width: 100%;
@@ -211,6 +215,11 @@ h3 {
   background: var(--color-transparent-grey);
   border-radius: 10px;
   padding: 10px 0;
+}
+
+.home__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-regular);
 }
 
 .home__contact {
@@ -341,6 +350,7 @@ h3 {
 }
 
 .skillset__title {
+  font-size: var(--font-medium);
   color: var(--color-yellow);
 }
 
@@ -353,7 +363,7 @@ h3 {
   background-color: var(--color-dark-green);
   padding: 20px 40px;
   border-radius: 10px;
-  border: 2px solid var(--color-light-white);
+  border: 2px solid var(--color-yellow);
 }
 
 .skill__description {
