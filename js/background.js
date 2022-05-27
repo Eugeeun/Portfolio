@@ -4,4 +4,4 @@ console.log(chosenImg);
 
 document.getElementById(
   'home'
-).style.backgroundImage = `url(../imgs/backgrounds/background${chosenImg}.jpg)`;
+).style.backgroundImage = `url(imgs/backgrounds/background${chosenImg}.jpg)`;
