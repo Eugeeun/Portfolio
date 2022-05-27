@@ -596,6 +596,7 @@ h3 {
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-transparent-black);
+    padding: 16px;
   }
 
   #navbar.navbar--dark {
@@ -607,10 +608,29 @@ h3 {
     text-align: center;
     width: 100%;
     display: none;
+    background-color: transparent;
   }
 
   .navbar__menu.open {
     display: block;
+  }
+
+  .home__container .profileAndGreeting {
+    flex-direction: column;
+  }
+
+  .home__container .profileAndGreeting .imgAndBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__container .profileAndGreeting .imgAndBtn img {
+    margin-right: 0px;
+  }
+
+  #home .home__container .profileAndGreeting .imgAndBtn .home__contact {
+    position: static;
   }
 
   .home__avartar {
@@ -643,29 +663,11 @@ h3 {
 
   .category__count {
     right: 20px;
+    top: -5px;
   }
 
   .project {
     flex-grow: 1;
-  }
-
-  .testimonial {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial__avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-  .testimonial__avatar:nth-child(even),
-  .testimonial__avatar:nth-child(odd) {
-    margin: 8px;
-  }
-
-  .testimonial__speech-bubble {
-    order: 1;
   }
 
   .toTopBtn {
