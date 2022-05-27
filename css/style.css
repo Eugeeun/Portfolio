@@ -20,6 +20,9 @@
   --color-HTML: #f95700;
   --color-CSS: #00539c;
   --color-JavaScript: #f5d042;
+  --color-blueblack: #101820;
+  --color-transparent-blueblack: #1018208a;
+  --color-green: #1a7a4c;
 
   /* Font size */
   --font-large: 48px;
@@ -483,7 +486,7 @@ h3 {
 
 .project__description {
   position: absolute;
-  background-color: var(--color-transparent-black);
+  background-color: var(--color-transparent-blueblack);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -496,7 +499,7 @@ h3 {
 }
 
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-yellow);
 }
 
 .project:hover .project__description {
@@ -513,18 +516,24 @@ h3 {
   height: 2px;
   transform: translateX(-50%);
   margin-top: 8px;
-  background-color: var(--color-dark-white);
+  background-color: var(--color-orange);
 }
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-yellow);
 }
 
-.contact__title,
-.contact__email,
-.contact__rights {
+.contact__title {
+  font-size: calc(var(--font-large) * 1.4);
   color: var(--color-white);
+  text-shadow: 4px 0 var(--color-black);
+}
+
+.contact__email,
+.contact__tel,
+.contact__rights {
+  color: var(--color-dark-green);
 }
 
 .contact__title {
@@ -537,12 +546,14 @@ h3 {
 }
 
 .contact__links i {
+  font-size: calc(var(--font-large) * 1.3);
+  color: var(--color-pink);
   transition: all var(--animaiton-duration) ease;
 }
 
 .contact__links i:hover {
   transform: scale(1.08);
-  color: var(--color-transparent-black);
+  color: var(--color-blueblack);
 }
 
 /* toTopBtn */
@@ -551,11 +562,11 @@ h3 {
   right: 30px;
   bottom: 30px;
   font-size: var(--font-medium);
-  background-color: var(--color-transparent-black);
+  background-color: var(--color-transparent-dark-green);
   border-radius: 50%;
   width: 42px;
   height: 42px;
-  color: var(--color-light-white);
+  color: var(--color-yellow);
   opacity: 0;
   pointer-events: none;
   transition: all var(--animaiton-duration) ease;
