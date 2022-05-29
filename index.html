@@ -15,12 +15,13 @@
       src="https://kit.fontawesome.com/f32b22132c.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/main.js" defer></script>
     <script src="./js/clock.js" defer></script>
     <script src="./js/greeting.js" defer></script>
     <script src="./js/background.js" defer></script>
+    <script src="./js/advantages.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -51,7 +52,7 @@
           </div>
           <h1 class="home__title">
             <span class="greeting">Welcome!</span>
-            It's JongWon's Portfolio!
+            -고종원의 포트폴리오-
           </h1>
         </div>
       <h2 class="home__description">
@@ -62,10 +63,65 @@
     <!-- About -->
     <section id="about" class="section section__container">
       <h1>About Me</h1>
-      <p>
-        풀스택 개발자가 되는 것이 목표입니다. 현재는 프론트엔드를 공부하고 있고 자바스크립트를
-        기반으로 백엔드도 구축할 예정입니다.
-      </p>
+      <div class="myinfo">
+        <ul class="infos">
+          <li>
+            <div class="imgAndDesc">
+              <i class="fa-solid fa-child-reaching"></i>
+              <div class="desc">
+                <h2>이름</h2>
+                <h3>고종원</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="imgAndDesc">
+              <i class="fa-solid fa-calendar"></i>
+              <div class="desc">
+                <h2>생년월일</h2>
+                <h3>1999.11.22</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="imgAndDesc">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="desc">
+                <h2>주소</h2>
+                <h3>전라북도 전주시 완산구</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="imgAndDesc">
+              <i class="fa-solid fa-phone"></i>
+              <div class="desc">
+                <h2>연락처</h2>
+                <h3>010-9447-1363</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="imgAndDesc">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="desc">
+                <h2>이메일</h2>
+                <h3>jack603@naver.com</h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="imgAndDesc">
+              <i class="fa-solid fa-school"></i>
+              <div class="desc">
+                <h2>학력</h2>
+                <h3>군산대학교 컴퓨터정보공학</h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <h2 class="majors__title">What I Am Current Doing</h2>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
@@ -182,7 +238,7 @@
     <!-- Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>My work</h1>
+        <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="all"><span>All</span><span class="category__count">4</button>
@@ -238,7 +294,7 @@
           <i class="fa-brands fa-instagram"></i>
         </a>
       </div>
-      <p class="contact__rights">2022 Coding JongWon - All rights reserved</p>
+      <p class="contact__rights">Copyright 2022. JongWon. All rights reserved.</p>
     </section>
 
     <!-- Arrow up -->
