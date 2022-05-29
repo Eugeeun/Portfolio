@@ -722,6 +722,20 @@ h3 {
     padding: 45px;
   }
 
+  .myinfo .infos li {
+    width: 90%;
+  }
+
+  .myinfo .infos .imgAndDesc {
+    margin-left: 18%;
+  }
+
+  .myinfo .infos .imgAndDesc .fa-solid {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
