@@ -300,6 +300,12 @@ h3 {
   line-height: 60px;
   color: var(--color-dark-grey);
 }
+
+.myinfo .infos .imgAndDesc:hover .fa-solid {
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
 .myinfo .infos .imgAndDesc .fa-child-reaching {
   font-size: calc(var(--font-medium) * 1.4);
 }
