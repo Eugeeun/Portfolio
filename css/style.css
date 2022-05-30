@@ -306,10 +306,6 @@ h3 {
   border: 1px solid var(--color-black);
 }
 
-.myinfo .infos .imgAndDesc .fa-child-reaching {
-  font-size: calc(var(--font-medium) * 1.4);
-}
-
 .myinfo .infos .imgAndDesc .desc {
   display: flex;
   flex-direction: column;
