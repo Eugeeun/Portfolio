@@ -172,7 +172,7 @@ h3 {
 
 /* Home */
 #home {
-  background: url() center/cover no-repeat;
+  background: url(../imgs/backgrounds/background1.jpg) center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
