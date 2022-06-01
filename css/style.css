@@ -652,6 +652,12 @@ h3 {
   pointer-events: auto;
 }
 
+/* comments */
+#disqus_thread {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
